@@ -15,16 +15,16 @@ const faiths = [
 ];
 
 const qualifications = [
-  { degree: "Hifz-ul-Quran", field: "Complete Quranic Memorization with Tajweed", institution: "Minhaj-ul-Quran", year: "1998" },
-  { degree: "Doctorate", field: "Comparative Global Religion & Islamic Studies", institution: "Advanced Research Institute", year: "2010" },
-  { degree: "M.A.", field: "Modern Sciences", institution: "Punjab University", year: "2004" },
-  { degree: "M.A.", field: "History", institution: "Punjab University", year: "2005" },
-  { degree: "M.A.", field: "Arabic Language & Literature", institution: "Punjab University", year: "2006" },
-  { degree: "M.A.", field: "English Language & Literature", institution: "Punjab University", year: "2007" },
-  { degree: "M.Ed.", field: "Master of Education", institution: "University of Education, Lahore", year: "2008" },
-  { degree: "B.Ed.", field: "Bachelor of Education", institution: "University of Education, Lahore", year: "2003" },
-  { degree: "Certificate", field: "Education (USA)", institution: "State University of New York", year: "2012" },
-  { degree: "Dars-e-Nizami", field: "Classical Islamic Seminary – 10 Years", institution: "Jamia Islamia", year: "2000" },
+  { degree: "Hifz-ul-Quran", field: "Complete Quranic Memorization with Tajweed", institution: "Minhaj-ul-Quran" },
+  { degree: "Doctorate", field: "Comparative Global Religion & Islamic Studies", institution: "Advanced Research Institute" },
+  { degree: "M.A.", field: "Modern Sciences", institution: "Punjab University" },
+  { degree: "M.A.", field: "History", institution: "Punjab University" },
+  { degree: "M.A.", field: "Arabic Language & Literature", institution: "Punjab University" },
+  { degree: "M.A.", field: "English Language & Literature", institution: "Punjab University" },
+  { degree: "M.Ed.", field: "Master of Education", institution: "University of Education, Lahore" },
+  { degree: "B.Ed.", field: "Bachelor of Education", institution: "University of Education, Lahore" },
+  { degree: "Certificate", field: "Education (USA)", institution: "State University of New York" },
+  { degree: "Dars-e-Nizami", field: "Classical Islamic Seminary – 10 Years", institution: "Jamia Islamia" },
 ];
 
 const testimonials = [
@@ -266,7 +266,17 @@ export default function App() {
             {/* Hero Picture */}
             <div className="hero-visual float-anim" style={{ position: "relative", width: 400, height: 400, flexShrink: 0 }}>
               <div style={{ width: 320, height: 320, borderRadius: "50%", border: "2px solid rgba(197,165,90,0.5)", overflow: "hidden", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", boxShadow: "0 0 60px rgba(197,165,90,0.2), 0 0 120px rgba(197,165,90,0.08)" }}>
-                <img src={require("./profile.jpg")} alt="Hafiz Syed Adeel Bukhari" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }} />
+   <img
+  src={require("./profile.jpg")}
+  alt="Hafiz Syed Adeel Bukhari"
+  style={{
+    width: "70%",
+    height: "100%",
+    objectFit: "cover",
+    objectPosition: "right center",
+    display: "block",
+  }}
+/>
               </div>
               {[{ icon: "✝️", angle: 0 }, { icon: "🕎", angle: 60 }, { icon: "🕉️", angle: 120 }, { icon: "🪷", angle: 180 }, { icon: "⚛️", angle: 240 }, { icon: "☯️", angle: 300 }].map(({ icon, angle }, i) => {
                 const rad = (angle * Math.PI) / 180;
